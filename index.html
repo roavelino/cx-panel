@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#000000">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<title>Painel CX</title>
+<style>
+:root{--scale:1}*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#000;color:#fff;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif}#app{width:100vw;height:100dvh;position:relative}.top{position:fixed;z-index:20;top:0;left:0;right:0;height:58px;padding:8px 14px;display:flex;align-items:center;justify-content:space-between;background:#000;border-bottom:1px solid #222}.timer{font-variant-numeric:tabular-nums;font-size:calc(24px*var(--scale));font-weight:700}.grp{display:flex;gap:8px;align-items:center}button{background:#000;color:#fff;border:1px solid #444;border-radius:10px;height:38px;padding:0 12px;font-size:16px}.slide{position:absolute;inset:58px 0 0 0;padding:34px 72px 34px;display:none;flex-direction:column;justify-content:center}.slide.active{display:flex}.k{color:#999;text-transform:uppercase;letter-spacing:.15em;font-size:calc(14px*var(--scale));font-weight:700;margin-bottom:12px}h1{margin:0 0 22px;font-size:calc(clamp(34px,6vw,68px)*var(--scale));line-height:1.02}.q{font-size:calc(clamp(23px,3.3vw,38px)*var(--scale));line-height:1.2;font-weight:600;max-width:1000px}.lab{margin-top:18px;margin-bottom:7px;color:#888;font-size:calc(13px*var(--scale));text-transform:uppercase;letter-spacing:.12em;font-weight:700}.sub,.tr{font-size:calc(clamp(18px,2.1vw,28px)*var(--scale));line-height:1.3;max-width:1100px;color:#ddd}.tr{margin-top:24px;padding-top:16px;border-top:1px solid #222;color:#aaa}.time{position:absolute;top:20px;right:72px;color:#bbb;font-size:calc(18px*var(--scale));font-weight:700}.nav{position:fixed;z-index:10;top:58px;bottom:0;width:18vw}.prev{left:0}.next{right:0}.foot{position:fixed;bottom:8px;left:50%;transform:translateX(-50%);color:#666;font-size:12px}
+</style>
+</head>
+<body>
+<div id="app">
+<div class="top">
+<div class="grp"><div class="timer" id="timer">00:00:00</div><button id="toggle">Iniciar</button><button id="reset">Zerar</button></div>
+<div class="grp"><button id="minus">−</button><button id="plus">+</button><button id="fs">Tela cheia</button></div>
+</div>
+<section class="slide active"><div class="k">Painel • Conexão com Tecnologia</div><h1>Roteiro do mediador</h1><div class="sub">00:00 Abertura • 00:08 IA e agentes • 00:20 Automação • 00:32 Por que automatizar? • 00:45 Experiência do cliente • 01:00 Papel humano • 01:12 Responsabilidade • 01:22 Futuro</div></section>
+<section class="slide"><div class="time">00:00</div><div class="k">Bloco 1</div><h1>Abertura e apresentações</h1><div class="lab">Pergunta</div><div class="q">Quando você percebeu que IA deixaria de ser apenas apoio e passaria a executar parte real do trabalho?</div><div class="tr">Transição: diferentes formas de IA já convivem nas empresas.</div></section>
+<section class="slide"><div class="time">00:08</div><div class="k">Bloco 2</div><h1>IA e agentes</h1><div class="q">O que muda quando a IA deixa de apenas responder e passa a agir?</div><div class="lab">Aprofundamento</div><div class="sub">Como vocês tratam a evolução do comportamento de um agente comercial ao longo do tempo?</div><div class="tr">Abrir 1 pergunta da plateia.</div></section>
+<section class="slide"><div class="time">00:20</div><div class="k">Bloco 3</div><h1>Automação × IA</h1><div class="q">Em que momento uma automação passa a precisar de julgamento?</div><div class="lab">Aprofundamento</div><div class="sub">O que ainda faz sentido manter determinístico, mesmo quando IA está disponível?</div><div class="tr">Abrir 1 pergunta da plateia.</div></section>
+<section class="slide"><div class="time">00:32</div><div class="k">Bloco 4</div><h1>Por que automatizar?</h1><div class="q">O que estamos tentando ganhar: velocidade, escala, consistência, custo ou qualidade?</div><div class="lab">Aprofundamento</div><div class="sub">Esses ganhos sempre caminham juntos? Onde aparecem os trade offs?</div></section>
+<section class="slide"><div class="time">00:45</div><div class="k">Bloco 5</div><h1>Experiência do cliente</h1><div class="q">O cliente deveria saber quando está falando com uma IA?</div><div class="lab">Aprofundamento</div><div class="sub">Uma interação pode converter bem e ainda prejudicar confiança, percepção da marca ou relacionamento?</div><div class="tr">Abrir até 2 perguntas da plateia.</div></section>
+<section class="slide"><div class="time">01:00</div><div class="k">Bloco 6</div><h1>Onde entra o humano?</h1><div class="q">Qual decisão você jamais deixaria completamente nas mãos da IA?</div><div class="lab">Aprofundamento</div><div class="sub">O humano define estratégia, supervisiona exceções, audita decisões ou entra quando a automação falha?</div><div class="tr">Abrir 1 pergunta da plateia.</div></section>
+<section class="slide"><div class="time">01:12</div><div class="k">Bloco 7</div><h1>Quem responde quando a IA erra?</h1><div class="q">Quem é responsável por uma decisão tomada ou sugerida por um agente?</div><div class="lab">Aprofundamento</div><div class="sub">Quando um agente encontra uma abordagem que gera mais resultado, quem decide se aquele comportamento é aceitável?</div></section>
+<section class="slide"><div class="time">01:22</div><div class="k">Bloco 8</div><h1>Quanto de autonomia estamos dispostos a entregar?</h1><div class="q">Daqui a cinco anos, o que ainda estaremos fazendo manualmente?</div><div class="lab">Pergunta final</div><div class="sub">O que continuará exigindo presença humana direta?</div><div class="tr">Abrir perguntas finais se houver tempo.</div></section>
+<div class="nav prev" id="prev"></div><div class="nav next" id="next"></div><div class="foot" id="count">1 / 9</div>
+</div>
+<script>
+const slides=[...document.querySelectorAll('.slide')];let i=0,scale=1;
+function show(n){i=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,x)=>s.classList.toggle('active',x===i));count.textContent=`${i+1} / ${slides.length}`;localStorage.setItem('slide',i)}
+prev.onclick=()=>show(i-1);next.onclick=()=>show(i+1);show(Number(localStorage.getItem('slide')||0));
+plus.onclick=()=>{scale=Math.min(1.45,scale+.08);document.documentElement.style.setProperty('--scale',scale);localStorage.setItem('scale',scale)}
+minus.onclick=()=>{scale=Math.max(.75,scale-.08);document.documentElement.style.setProperty('--scale',scale);localStorage.setItem('scale',scale)}
+scale=Number(localStorage.getItem('scale')||1);document.documentElement.style.setProperty('--scale',scale);
+let start=0,elapsed=0,running=false,raf;function fmt(ms){let t=Math.floor(ms/1000),h=String(Math.floor(t/3600)).padStart(2,'0'),m=String(Math.floor((t%3600)/60)).padStart(2,'0'),s=String(t%60).padStart(2,'0');return `${h}:${m}:${s}`}function tick(n){if(!running)return;timer.textContent=fmt(elapsed+n-start);raf=requestAnimationFrame(tick)}
+toggle.onclick=()=>{if(!running){running=true;start=performance.now();toggle.textContent='Pausar';raf=requestAnimationFrame(tick)}else{elapsed+=performance.now()-start;running=false;cancelAnimationFrame(raf);toggle.textContent='Iniciar'}}
+reset.onclick=()=>{elapsed=0;start=performance.now();timer.textContent='00:00:00'}
+fs.onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){}}
+let x0=null;document.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});document.addEventListener('touchend',e=>{if(x0===null)return;let dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>60)show(i+(dx<0?1:-1));x0=null},{passive:true});
+if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js'));
+</script>
+</body></html>
