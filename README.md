@@ -21,3 +21,4 @@ A URL esperada será:
 `https://roavelino.github.io/cx-panel/`
 
 No iPhone, abra essa URL no Safari e use `Compartilhar > Adicionar à Tela de Início`.
+
